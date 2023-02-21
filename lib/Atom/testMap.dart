@@ -8,14 +8,14 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:location/location.dart';
 
-class SimpleMaps extends StatefulWidget {
-  const SimpleMaps({super.key});
+class testMap extends StatefulWidget {
+  const testMap({super.key});
 
   @override
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<SimpleMaps> {
+class _MyAppState extends State<testMap> {
   //String googleApikey = "AIzaSyCMBfP4py6zjtDQEUby3HeXWl4jpfv5wTM";// use in android.xml
   Completer<GoogleMapController> _controller = Completer();
   static bool gpsON = false;

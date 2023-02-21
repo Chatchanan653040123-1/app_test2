@@ -1,4 +1,5 @@
 import 'package:app01/Atom/SimpleMaps.dart';
+import 'package:app01/Atom/testMap.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -68,7 +69,7 @@ class _HomePageState extends State<HomePage> {
               child: Text('Something went wrong'),
             );
           } else if (snapshot.hasData) {
-            return const SimpleMaps();
+            return const testMap();
           } else {
             return const AuthPage();
           }
